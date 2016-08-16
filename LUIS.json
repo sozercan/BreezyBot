@@ -1,0 +1,1269 @@
+{
+  "luis_schema_version": "1.3.0",
+  "name": "Breezy",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "ChangeTime"
+    },
+    {
+      "name": "ChangeTempType"
+    },
+    {
+      "name": "ChangeLocation"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "GetPrecipitation"
+    },
+    {
+      "name": "GetWeather"
+    }
+  ],
+  "entities": [
+    {
+      "name": "location"
+    },
+    {
+      "name": "precipitationType"
+    },
+    {
+      "name": "tempType"
+    },
+    {
+      "name": "zipCode"
+    }
+  ],
+  "composites": [],
+  "bing_entities": [
+    "datetime",
+    "temperature",
+    "geography"
+  ],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "celsius",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "weather in istanbul",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "how's the weather in seattle tomorrow",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "how about in 94107",
+      "intent": "ChangeLocation",
+      "entities": [
+        {
+          "entity": "zipCode",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "will it rain in seattle on friday",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how is it in celsius",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is it rainy in san diego",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "is it going to rain in seattle",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is it going to rain in boston",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is it rainy in san francisco",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "in fahrenheit please",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "lfjds",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "weather in chicago",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "tell me about it in celsius",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "test",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "weather in seattle tomorrow",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "will it rain in wilmington nc tomorrow?",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "location",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "can you tell me in celcius",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "is it rainy in austin",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "dnskf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "in celcius please",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "is it rainy in seattle",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "weather in new york city",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "what about in boston",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "how's the weather in austin, tx",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "in celsius please",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "hi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "lkhkjg",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "will it rain in seattle today",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how about in fahrenheit",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "is it going to snow in san jose",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "weather in san francisco",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "will it snow in orlando",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how's the weather in wilmington?",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how about in celcius",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "hows weather in seattle",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "weather in seattle this friday",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "is it snowing in miami",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "in celsius",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "in celcius",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "is there rain in new york city",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how's the weather in troy",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "weather in wilmington",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "can you tell me the weather in new york city",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "how about in celsius",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "weather in seattle next friday",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "how's the weather in 94101",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "zipCode",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how's the weather in miami",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "what will be the temperature in boston tomorrow",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "is it going to rain in seattle today",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "will it rain in seattle tomorrow",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "change to fahrenheit",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "convert to fahrenheit",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "conver to fahrenheit",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "is it raining in seattle",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how's the weather in wilmington",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "will it be raining on 94107 tomorrow",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "zipCode",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "will there be fog in san francisco tomorrow",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in boston",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "what is the weather like in atlanta, ga",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "weather in seattle",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "convert to celsius",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how about in oakland",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "will it rain in seattle this friday",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "change to celsius",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in 94103",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "zipCode",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "is it rainy in istanbul",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "will it drizzle in boston tomorrow",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in toronto",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "how's it in celsius please",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how about miami, fl right now",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "will it be raining in oakland next monday",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "will it rain in seattle next tuesday",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how about in oakland tomorrow",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "how's the weather in seattle, wa",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "how's weather in atlanta",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "in fahrenheit",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "weather in 45701",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "zipCode",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "is it rainy in seattle right now",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how's the weather in boston",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "is it snowing in boston",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how about toronto",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "in los angeles next friday",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "in detroit next tuesday",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "will it rain in seattle on wednesday",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how about in houston next weekend",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "is it going to rain in 02141",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "zipCode",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how is it in houston tomorrow",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "how was weather in boston yesterday",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "is it snowy in toronto",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how's the weather in toronto",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "is it snowing in moscow",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how about in los angeles",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "is it raining in seattle right now",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "what about toronto",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "how is it in atlanta",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "how about in san francisco",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "how's the weather in 94107",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "zipCode",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how about in boston",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "will it rain in new york city tomorrow",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "is it going to snow in toronto",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "will it snow in seattle tomorrow",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "will it rain in seattle",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "is it going to snow in vancouver",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "what is the weather like in boston tomorrow",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "how's the weather in seattle",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "is it going to snow in seattle",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how's the weather in chicago",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "is it going to rain in vancouver",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how's the weather in san francisco",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "any chance of rain in seattle",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in seattle tomorrow",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "what's the weather like in vancouver",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "what is the weather like in toronto",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "how is the weather in atlanta",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "is it snowing in denver",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "wlkj",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "is it snowing in new york city",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how's the weather in san diego",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "how's the weather in boulder",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in san francisco, ca",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "weather",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "will it rain in oakland next month",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "in austin please",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "was it raining in boston yesterday",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "is it rainy in boston",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how is it in houston",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "how about in new york city",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "in los angeles please",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "will it rain in boston",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "temperature in celcius",
+      "intent": "ChangeTempType",
+      "entities": [
+        {
+          "entity": "tempType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how about this friday",
+      "intent": "ChangeTime",
+      "entities": []
+    },
+    {
+      "text": "what about tomorrow",
+      "intent": "ChangeTime",
+      "entities": []
+    },
+    {
+      "text": "how about tomorrow",
+      "intent": "ChangeTime",
+      "entities": []
+    },
+    {
+      "text": "what was it yesterday",
+      "intent": "ChangeTime",
+      "entities": []
+    },
+    {
+      "text": "how about this wednesday",
+      "intent": "ChangeTime",
+      "entities": []
+    },
+    {
+      "text": "how about this tuesday",
+      "intent": "ChangeTime",
+      "entities": []
+    },
+    {
+      "text": "what about this friday",
+      "intent": "ChangeTime",
+      "entities": []
+    },
+    {
+      "text": "how's weather in seattle",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "weather in san jose",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "what about in half moon bay?",
+      "intent": "ChangeLocation",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "weather in 45107 next tuesday",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "zipCode",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "what is the weather in 28412",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "zipCode",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "is it raining in san francisco",
+      "intent": "GetPrecipitation",
+      "entities": [
+        {
+          "entity": "precipitationType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how about in seattle",
+      "intent": "ChangeLocation",
+      "entities": []
+    },
+    {
+      "text": "how about in toronto",
+      "intent": "ChangeLocation",
+      "entities": []
+    }
+  ]
+}

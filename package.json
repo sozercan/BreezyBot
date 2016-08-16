@@ -16,7 +16,6 @@
   "dependencies": {
     "botbuilder": "^3.2.3",
     "city-to-coords": "^1.1.0",
-    "dateformat": "^1.0.12",
     "forecast-io": "^1.0.2",
     "restify": "^4.1.1"
   }
